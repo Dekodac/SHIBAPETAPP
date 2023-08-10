@@ -1,0 +1,38 @@
+[
+    {
+      "model": "shiba_app.shiba",
+      "pk": 1,
+      "fields": {
+        "name": "Maki",
+        "eyecolor": "Brown",
+        "furcolor": "Red",
+        "accessories": "Bowtie",
+        "personality": "Playful and friendly",
+        "experience_points": 0
+      }
+    },
+    {
+      "model": "shiba_app.shiba",
+      "pk": 2,
+      "fields": {
+        "name": "Celeste",
+        "eyecolor": "Black",
+        "furcolor": "Cream",
+        "accessories": "Glasses",
+        "personality": "Calm and laid-back",
+        "experience_points": 15
+      }
+    },
+    {
+        "model": "shiba_app.shiba",
+        "pk": 3,
+        "fields": {
+          "name": "Bnan",
+          "eyecolor": "Yellow",
+          "furcolor": "Tan",
+          "accessories": "Tophat",
+          "personality": "Clumsy and goofy",
+          "experience_points": 5
+        }
+      }
+  ]
