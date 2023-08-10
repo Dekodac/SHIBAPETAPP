@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^@y808uxsgz(w&a7o71j5_r%cbfm6o5zipxngbi(_f2b%gndd_'
+from decouple import config
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shiba_app',
+    'inventory_app',
+    'users_app',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +79,12 @@ WSGI_APPLICATION = 'shiba_pet_app_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'shiba_pet_app_db',
     }
 }
+
+AUTH_USER_MODEL = 'users_app.User'
 
 
 # Password validation
