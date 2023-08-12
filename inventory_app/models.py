@@ -7,7 +7,7 @@ class OwnedShiba(models.Model):
     name = models.ForeignKey(Shiba, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.user.username}'s {self.shiba.name}"
+        return f"{self.user.username}'s {self.name}"
 
 class UserInventory(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
