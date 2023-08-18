@@ -6,6 +6,7 @@ from .models import Shiba
 from .serializers import ShibaSerializer
 
 class ShibaList(APIView):
+    
     def get(self, request, format=None):
         shibas = Shiba.objects.all()
         serializer = ShibaSerializer(shibas, many=True)

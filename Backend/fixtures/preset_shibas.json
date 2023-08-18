@@ -1,0 +1,56 @@
+[
+  {
+      "model": "shiba_app.shiba",
+      "pk": 1,
+      "fields": {
+          "name": "Maki",
+          "eyecolor": "Brown",
+          "furcolor": "Red",
+          "personality": "Playful and friendly",
+          "experience_points": 0,
+          "top_hat": false,
+          "bow_tie": false,
+          "glasses": false,
+          "muzzle": false,
+          "hair_clip": false,
+          "dramatic_mustache": false,
+          "cane": false
+      }
+  },
+  {
+      "model": "shiba_app.shiba",
+      "pk": 2,
+      "fields": {
+          "name": "Celeste",
+          "eyecolor": "Black",
+          "furcolor": "Cream",
+          "personality": "Calm and laid-back",
+          "experience_points": 15,
+          "top_hat": false,
+          "bow_tie": false,
+          "glasses": true,
+          "muzzle": false,
+          "hair_clip": false,
+          "dramatic_mustache": false,
+          "cane": false
+      }
+  },
+  {
+      "model": "shiba_app.shiba",
+      "pk": 3,
+      "fields": {
+          "name": "Bnan",
+          "eyecolor": "Yellow",
+          "furcolor": "Tan",
+          "personality": "Clumsy and goofy",
+          "experience_points": 5,
+          "top_hat": true,
+          "bow_tie": false,
+          "glasses": false,
+          "muzzle": false,
+          "hair_clip": true,
+          "dramatic_mustache": false,
+          "cane": false
+      }
+  }
+]
