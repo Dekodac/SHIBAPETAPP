@@ -24,7 +24,6 @@ class SignUp(APIView):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
-        name = request.data['name']
         super_user = False
         staff = False
         if 'super' in request.data:
@@ -33,7 +32,7 @@ class SignUp(APIView):
             staff = request.data['staff']
         try:
             # creates new user
-            new_user = User.objects.create_user(username = email, email = email, name = name, password = password, is_superuser = super_user, is_staff = staff)
+            new_user = User.objects.create_user(username = email, email = email, password = password, is_superuser = super_user, is_staff = staff)
             new_user.save()
             return JsonResponse({"success":True})
         except Exception as e:
